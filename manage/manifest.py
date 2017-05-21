@@ -22,7 +22,7 @@ class Containers(dict):
             extra = ''
 
         parts = list(map(lambda v: scores[v] if v in scores.keys() else v, parts))
-        parts = list(map(int, parts))
+        parts = list(map(str, parts))
         parts.append(extra)
         return parts
 
