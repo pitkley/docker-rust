@@ -1,5 +1,5 @@
-dockerhub_repo: scorpil/rust
-github_repo: scorpil/docker-rust
+dockerhub_repo: pitkley/rust
+github_repo: pitkley/docker-rust
 images:
   - version: '1.5'
     archive: 'rust-1.5.0-x86_64-unknown-linux-gnu.tar.gz'
@@ -28,14 +28,16 @@ images:
     extra_tags:
       - '1.15.1'
   - version: '1.16'
-    channel: 'stable'
     archive: 'rust-1.16.0-x86_64-unknown-linux-gnu.tar.gz'
+  - version: '1.17'
+    channel: 'stable'
+    archive: 'rust-1.17.0-x86_64-unknown-linux-gnu.tar.gz'
     extra_tags:
       - '1'
-      - '1.16'
-  - version: '1.17'
+      - '1.17'
+  - version: '1.18'
     channel: 'beta'
     archive: 'rust-beta-x86_64-unknown-linux-gnu.tar.gz'
-  - version: '1.18'
+  - version: '1.19'
     channel: 'nightly'
     archive: 'rust-nightly-x86_64-unknown-linux-gnu.tar.gz'
