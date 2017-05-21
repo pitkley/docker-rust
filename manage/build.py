@@ -31,7 +31,7 @@ def build():
                                    rustc=rustc_version,
                                    updated=datetime.now())
         for tag in image_data['tags']:
-            image.tag('scorpil/rust', tag)
+            image.tag("{}:{}".format(manifest.dockerhub_repo, main_tag), tag)
         print(u"\u2713 [image: {} | rustc: {}]".format(image.short_id, rustc_version))
         sys.stdout.flush()
     manifest.store()
