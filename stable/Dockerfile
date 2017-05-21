@@ -1,10 +1,7 @@
 FROM debian:jessie
-MAINTAINER Andrew Scorpil "dev@scorpil.com"
 
-ENV DEBIAN_FRONTEND=noninteractive
-
-RUN apt-get update && \
-    apt-get install \
+RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install \
        ca-certificates \
        curl \
        gcc \
