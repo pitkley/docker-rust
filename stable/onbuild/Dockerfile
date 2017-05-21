@@ -1,4 +1,4 @@
-FROM scorpil/rust:stable
+FROM pitkley/rust:stable
 
 RUN mkdir -p /rust/app
 WORKDIR /rust/app
