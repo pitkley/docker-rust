@@ -22,7 +22,7 @@ def build():
         print("{}{}".format(building_text, ' ' * spaces), end='')
         sys.stdout.flush()
 
-        image = client.images.build(
+        image, _ = client.images.build(
             fileobj=file(image_data['path'], 'r'),
             tag="{}:{}".format(manifest.dockerhub_repo, main_tag))
         rustc_version = client.containers.run(image.id, command="rustc -V").strip()
