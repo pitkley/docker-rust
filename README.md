@@ -1,3 +1,8 @@
+# DEPRECATION NOTICE
+
+If you want to use a **stable** version of Rust, please use the official [`rust` image](https://hub.docker.com/\_/rust/) going forward.
+For a **nightly** version, please use the [`rustlang/rust` image](https://hub.docker.com/r/rustlang/rust/) instead.
+
 # Supported tags and respective `Dockerfile` links
 
 - [`1.24.1`, `1.24` (*/1.24.1/Dockerfile*)](https://github.com/pitkley/docker-rust/blob/master/1.24.1/Dockerfile)
