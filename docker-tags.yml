@@ -1,27 +1,35 @@
 dockerhub_repo: pitkley/rust
 github_repo: pitkley/docker-rust
 images:
-  - version: '1.20'
-    archive: 'rust-1.20.0-x86_64-unknown-linux-gnu.tar.gz'
-  - version: '1.21'
-    archive: 'rust-1.21.0-x86_64-unknown-linux-gnu.tar.gz'
-  - version: '1.22.1'
-    archive: 'rust-1.22.1-x86_64-unknown-linux-gnu.tar.gz'
-    extra_tags:
-      - '1.22'
-  - version: '1.23'
-    archive: 'rust-1.23.0-x86_64-unknown-linux-gnu.tar.gz'
-  - version: '1.24.0'
-    archive: 'rust-1.24.0-x86_64-unknown-linux-gnu.tar.gz'
   - version: '1.24.1'
-    channel: 'stable'
     archive: 'rust-1.24.1-x86_64-unknown-linux-gnu.tar.gz'
     extra_tags:
-      - '1'
       - '1.24'
   - version: '1.25'
+    archive: 'rust-1.25.0-x86_64-unknown-linux-gnu.tar.gz'
+  - version: '1.26.2'
+    archive: 'rust-1.26.2-x86_64-unknown-linux-gnu.tar.gz'
+    extra_tags:
+      - '1.26'
+  - version: '1.27.2'
+    archive: 'rust-1.27.2-x86_64-unknown-linux-gnu.tar.gz'
+    extra_tags:
+      - '1.27'
+  - version: '1.28'
+    archive: 'rust-1.28.0-x86_64-unknown-linux-gnu.tar.gz'
+  - version: '1.29.2'
+    archive: 'rust-1.29.2-x86_64-unknown-linux-gnu.tar.gz'
+    extra_tags:
+      - '1.29'
+  - version: '1.30.1'
+    channel: 'stable'
+    archive: 'rust-1.30.1-x86_64-unknown-linux-gnu.tar.gz'
+    extra_tags:
+      - '1'
+      - '1.30'
+  - version: '1.31'
     channel: 'beta'
     archive: 'rust-beta-x86_64-unknown-linux-gnu.tar.gz'
-  - version: '1.26'
+  - version: '1.32'
     channel: 'nightly'
     archive: 'rust-nightly-x86_64-unknown-linux-gnu.tar.gz'
